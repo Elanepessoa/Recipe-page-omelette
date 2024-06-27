@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* cores variaveis */
+:root {
+    --Nutmeg: hsl(14, 45%, 36%);
+    --DarkRaspberry: hsl(332, 51%, 32%);
+    --White: hsl(0, 0%, 100%);
+    --RoseWhite: hsl(330, 100%, 98%);
+    --Eggshell: hsl(30, 54%, 90%);
+    --LightGrey: hsl(30, 18%, 87%);
+    --WengeBrown: hsl(30, 10%, 34%);
+    --DarkCharcoal: hsl(24, 5%, 18%);
+}
+
+body {
+    background-color: var(--Eggshell);
+    font-size: 16px;
+    font-style: "Outfit", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--DarkCharcoal);
+}
+
+.conteiner {
+    max-width: 1000px;
+    background-color: var(--White);
+    margin: 5rem;
+    padding: 1.7rem;
+    border-radius: 1.2rem;
+}
+
+.img {
+    border-radius: 1rem;
+    overflow: hidden;
+    width: 100%;
+}
+
+.img-omelette {
+    /* exibe todo conteudo da imagem*/
+    width: 100%;
+}
+
+h1 {
+    margin: 1.5rem 0rem;
+    color: var(--DarkCharcoal);
+
+    font-weight: 400;
+}
+
+.subtitle {
+    color: var(--DarkCharcoal);
+}
+
+.pink {
+    margin: 1.7rem 0rem;
+    background-color: var(--RoseWhite);
+    padding: 1.7rem;
+}
+
+.pink h3 {
+    color: var(--DarkRaspberry);
+    font-size: 1.7rem;
+    margin-bottom: 0;
+}
+
+.pink-list {
+
+    list-style-position: inside;
+    padding-left: 0.1rem;
+}
+
+.pink-list li {
+    margin: 1rem 0rem;
+}
+
+.pink-list li strong {
+    margin-left: 2rem;
+
+}
+
+h2 {
+    color: var(--Nutmeg);
+    font-family: "young serif", serif;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.ingredients {
+    /* div */
+    border-bottom: solid 0.5px pink;
+    margin-bottom: 1.7rem;
+    /* background-color: red; */
+}
+
+.ingredient-list {
+    margin: 1.7rem 0;
+    padding-left: 0.5rem;
+    padding-bottom: 0.5rem;
+    list-style-position: inside;
+    /* border: 1px solid orange; */
+
+}
+
+.ingredient-list li {
+    margin-bottom: 1rem 0rem;
+    /* background-color: blue; */
+}
+
+.instructions {
+    border-bottom: solid 0.5px pink;
+    margin-bottom: 1.7rem;
+}
+
+.instructions-list {
+    /* list-style-position: inside; */
+    margin-bottom: 2rem;
+}
+
+.instructions-list li {
+    margin-bottom: 0.7rem;
+    padding-left: 0.5rem;
+    margin-left: 2rem;
+}
+
+.instructions-list li::marker {
+    color: var(--Nutmeg);
+    font-weight: 800;
+}
+
+
+.nutrition .p2 {
+    margin-bottom: 1rem;
+}
+
+table {
+    width: 100%;
+    padding: 2rem;
+    border-collapse: collapse;
+}
+
+
+table tr td {
+    width: 50%;
+    padding-top: 0.5rem;
+    padding-bottom: 0.7rem;
+    border-bottom: 1px solid var(--LightGrey);
+
+}
+
+table tr td:first-child {
+    padding-left: 2rem;
+}
+
+/* pega a a ultima tr, quase IF  */
+table tr:last-child td {
+    border: none;
+}
+
+table tr td strong {
+    color: var(--Nutmeg);
+    font-weight: 900;
+}
